@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendForge_AI | Products</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
 
+<header class="hero-section">
+    <div class="container">
+        <h1>Our Solutions</h1>
+        <p>Browse TrendForge_AI's autonomous solutions for market leaders.</p>
+    </div>
+</header>
+
+<section class="products-section">
+    <div class="container">
+        {% for product in products %}
+            <div class="product-card">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p><strong>${{ '%.2f' | format(product.price_cents / 100) }}</strong></p>
+                <a href="/buy/{{ product.id }}" class="btn-primary">Buy Now</a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 TrendForge_AI. Powered by Synapse Engine™.</p>
+    </div>
+</footer>
+
+</body>
+</html>
