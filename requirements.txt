@@ -3,3 +3,4 @@ gunicorn
 stripe
 python-dotenv
 requests
+pytrends
