@@ -1,20 +1,14 @@
 [
     {
-        "id": "prod_AI_CyberDefense",
-        "name": "AI-Powered Cyber Defense Script",
-        "description": "Adaptive cybersecurity tool for billion-dollar enterprises.",
-        "price_cents": 49900
+        "id": "prod_sample1",
+        "name": "Emergency Cyber Defense Toolkit",
+        "description": "Protect your company from live cybersecurity attacks with our AI-powered instant response toolkit.",
+        "price_cents": 99900
     },
     {
-        "id": "prod_MarketAnalyzer",
-        "name": "Real-Time Market Risk Analyzer",
-        "description": "Analyze and intercept financial threats dynamically.",
-        "price_cents": 29900
-    },
-    {
-        "id": "prod_SEOAccelerator",
-        "name": "Enterprise SEO Accelerator",
-        "description": "Dominate search rankings with AI-tuned SEO scripts.",
-        "price_cents": 19900
+        "id": "prod_sample2",
+        "name": "AI-Optimized Reputation Recovery",
+        "description": "Recover from PR disasters with AI-crafted media recovery and messaging scripts.",
+        "price_cents": 79900
     }
 ]

@@ -1,2 +1,3 @@
 # TrendForge_AI
-Automated Business Intelligence - Professional Website and AI Backend Restored.
+
+A fully automated SaaS system for dynamic product generation and sales.

@@ -1,1 +1,1 @@
-# Placeholder for LLM connection engine (to be developed further)
+# Placeholder for Stratosync engine
