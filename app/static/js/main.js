@@ -1,1 +1,1 @@
-// TrendForge_AI JS
+// main.js placeholder
