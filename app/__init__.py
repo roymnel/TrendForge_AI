@@ -1,1 +1,1 @@
-# Flask App Init
+# app/__init__.py

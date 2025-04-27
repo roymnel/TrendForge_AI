@@ -1,3 +1,2 @@
-# TrendForge_AI
-
-Autonomous AI Solutions for Enterprises.
+# TrendForge_AI Website
+Organized Flask-ready structure.
