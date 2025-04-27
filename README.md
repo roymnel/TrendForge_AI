@@ -1,2 +1,2 @@
-# TrendForge_AI Website
-Organized Flask-ready structure.
+# TrendForge_AI
+Automated Business Intelligence - Professional Website and AI Backend Restored.

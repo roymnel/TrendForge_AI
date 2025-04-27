@@ -34,18 +34,6 @@ def testimonial():
 def contact():
     return render_template('contact.html')
 
-@app.route('/portfolio')
-def portfolio():
-    return render_template('portfolio.html')
-
-@app.route('/products')
-def products():
-    return render_template('products.html')
-
-@app.route('/thank-you')
-def thank_you():
-    return render_template('thank-you.html')
-
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
