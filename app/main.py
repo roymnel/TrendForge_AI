@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import stripe
 import os
 import json
-from stratosync_engine import StratoSyncEngine
+from app.stratosync_engine import StratoSyncEngine
 from dotenv import load_dotenv
 
 # Load environment variables
