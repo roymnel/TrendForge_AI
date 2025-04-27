@@ -1,5 +1,0 @@
-Flask
-gunicorn
-stripe
-python-dotenv
-requests
