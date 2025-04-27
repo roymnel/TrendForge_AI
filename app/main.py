@@ -1,72 +1,51 @@
-from flask import Flask, render_template, request, redirect, url_for
-import stripe
-import os
-import json
-from app.stratosync_engine import StratoSyncEngine
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Stripe API keys
-stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
-YOUR_DOMAIN = 'https://trendforge-ai-v2.onrender.com'  # Change if your Render domain changes!
-
-# Load products from JSON
-with open('app/products.json') as f:
-    products = json.load(f)
-
-# Home route
+# Home Page
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Products listing
-@app.route('/products')
-def products_page():
-    return render_template('products.html', products=products)
+# About Page
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
-# Buy Now (create Stripe checkout session)
-@app.route('/buy/<product_id>')
-def buy(product_id):
-    # Find the product by ID
-    product = next((p for p in products if p['id'] == product_id), None)
-    if not product:
-        return "Product not found", 404
+# Services Page
+@app.route('/services')
+def services():
+    return render_template('service.html')
 
-    checkout_session = stripe.checkout.Session.create(
-        payment_method_types=['card'],
-        line_items=[{
-            'price_data': {
-                'currency': 'usd',
-                'product_data': {
-                    'name': product['name'],
-                    'description': product['description'],
-                },
-                'unit_amount': product['price_cents'],
-            },
-            'quantity': 1,
-        }],
-        mode='payment',
-        success_url=YOUR_DOMAIN + '/thank-you',
-        cancel_url=YOUR_DOMAIN + '/',
-    )
-    return redirect(checkout_session.url, code=303)
+# Projects Page
+@app.route('/projects')
+def projects():
+    return render_template('project.html')
 
-# Contact form submission (basic handling for now)
-@app.route('/thank-you', methods=['GET', 'POST'])
-def thank_you():
-    if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        message = request.form['message']
-        # Here you could use your Stratosync system to handle emails
-        # (optional future expansion)
-        print(f"Message from {name} ({email}): {message}")
-    return render_template('thank-you.html')
+# Blog Page
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
 
-# Run the app
+# Team Page
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+# Testimonial Page
+@app.route('/testimonial')
+def testimonial():
+    return render_template('testimonial.html')
+
+# Contact Page
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+# 404 Page
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 if __name__ == "__main__":
     app.run(debug=True)
