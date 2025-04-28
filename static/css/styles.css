@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
     background: url('/static/css/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
