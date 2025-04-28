@@ -1,6 +1,19 @@
-<!-- Navbar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TrendForge_AI - Autonomous AI Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+    <a href="{{ url_for('home') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
         <h2 class="m-0 text-primary">TrendForge_AI</h2>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -8,17 +21,18 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="services.html" class="nav-item nav-link">Services</a>
-            <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-            <a href="products.html" class="nav-item nav-link">Products</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="{{ url_for('home') }}" class="nav-item nav-link active">Home</a>
+            <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
+            <a href="{{ url_for('services') }}" class="nav-item nav-link">Services</a>
+            <a href="{{ url_for('portfolio') }}" class="nav-item nav-link">Portfolio</a>
+            <a href="{{ url_for('products') }}" class="nav-item nav-link">Products</a>
+            <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
     </div>
 </nav>
+<!-- Navbar End -->
 
-<!-- Hero Section -->
+<!-- Hero Section Start -->
 <div class="container-fluid bg-primary py-5 mb-5 hero-header">
     <div class="container py-5">
         <div class="row justify-content-center py-5">
@@ -26,14 +40,15 @@
                 <h1 class="display-3 text-white mb-3 animated slideInDown">Welcome to TrendForge_AI</h1>
                 <p class="fs-4 text-white mb-4 animated slideInDown">Autonomous AI Solutions for Real-Time Business Success</p>
                 <div class="position-relative w-75 mx-auto animated slideInDown">
-                    <a href="services.html" class="btn btn-dark py-3 px-5">Explore Our Services</a>
+                    <a href="{{ url_for('services') }}" class="btn btn-dark py-3 px-5">Explore Our Services</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Hero Section End -->
 
-<!-- About Section (Summary on Homepage) -->
+<!-- About Section Start -->
 <div class="container-fluid py-5">
     <div class="container">
         <div class="row g-5 align-items-center">
@@ -41,14 +56,30 @@
                 <h1 class="mb-4">About TrendForge_AI</h1>
                 <p class="mb-4">
                     Powered by our proprietary Synapse Engine™, TrendForge_AI dynamically detects market demands
-                    and deploys real-time digital solutions — from AI-driven reports to autonomous service launches — 
+                    and deploys real-time digital solutions — from AI-driven reports to autonomous service launches —
                     empowering businesses to outpace competitors effortlessly.
                 </p>
-                <a class="btn btn-primary py-3 px-5 mt-3" href="about.html">Learn More</a>
+                <a class="btn btn-primary py-3 px-5 mt-3" href="{{ url_for('about') }}">Learn More</a>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid rounded" src="img/about.jpg" alt="About TrendForge_AI">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/about.jpg') }}" alt="About TrendForge_AI">
             </div>
         </div>
     </div>
 </div>
+<!-- About Section End -->
+
+<!-- Footer Start -->
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+        &copy; <a class="text-light" href="{{ url_for('home') }}">TrendForge_AI</a>, All Rights Reserved.
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- JavaScript Libraries -->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
