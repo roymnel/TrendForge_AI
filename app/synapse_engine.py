@@ -1,1 +1,0 @@
-# Placeholder for Synapse core functions (dynamic learning, smart matching)
