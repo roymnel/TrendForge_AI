@@ -1,4 +1,4 @@
 Flask
 stripe
-pytrends
 gunicorn
+pytrends

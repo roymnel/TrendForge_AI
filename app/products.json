@@ -1,14 +1,4 @@
 [
-    {
-        "id": "prod_sample1",
-        "name": "Emergency Cyber Defense Toolkit",
-        "description": "Protect your company from live cybersecurity attacks with our AI-powered instant response toolkit.",
-        "price_cents": 99900
-    },
-    {
-        "id": "prod_sample2",
-        "name": "AI-Optimized Reputation Recovery",
-        "description": "Recover from PR disasters with AI-crafted media recovery and messaging scripts.",
-        "price_cents": 79900
-    }
+    {"id": "prod001", "name": "Cyber Crisis Response Toolkit", "description": "Immediate AI-driven response scripts for cybersecurity emergencies.", "price_cents": 199900},
+    {"id": "prod002", "name": "Instant Reputation Recovery", "description": "AI-generated PR scripts to neutralize online crises.", "price_cents": 149900}
 ]
