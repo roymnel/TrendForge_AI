@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -45,7 +45,7 @@ nav ul li a {
 
 .hero {
     text-align: center;
-    margin: 100px auto 50px;
+    margin: 100px auto 40px;
 }
 
 .hero h1 {
