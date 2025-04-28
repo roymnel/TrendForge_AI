@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-    font-size: 3.5em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #91919B;
 }
@@ -45,7 +45,8 @@ nav ul li a {
 
 .hero {
     text-align: center;
-    margin: 100px auto 40px;
+    margin: 100px auto 50px;
+    padding: 0 20px;
 }
 
 .hero h1 {
@@ -62,7 +63,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .product {
