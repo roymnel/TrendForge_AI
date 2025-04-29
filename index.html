@@ -4,98 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TrendForge_AI</title>
-  <link href="static/css/styles.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background: #000000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .product {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    header img {
+      height: 100px;
+    }
+  </style>
 </head>
 <body>
-
-<video autoplay muted loop id="background-video">
-  <source src="static/media/Background_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<header class="d-flex justify-content-between align-items-center">
-  <a href="#" class="navbar-brand">
+  <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
     <img src="static/images/logo.jpg" alt="TrendForge Logo">
-  </a>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-        </ul>
+    <button class="btn btn-danger">Request Access</button>
+  </header>
+
+  <section class="text-center p-5">
+    <h1 class="display-5 fw-bold">The Future of Corporate<br>Rescues Starts Here</h1>
+    <p class="lead">Automated Solutions. Immediate Impact.</p>
+  </section>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-md-4 product">
+        <img src="static/images/competitor.jpg" alt="Competitor Tracker">
+        <h4>Competitor Price Tracker</h4>
+        <p>Live tracking of rival pricing to outmaneuver instantly.</p>
+        <a href="#" class="btn btn-outline-light">Buy Now</a>
+      </div>
+      <div class="col-md-4 product">
+        <img src="static/images/compliance.jpg" alt="Compliance Checker">
+        <h4>Compliance Checker</h4>
+        <p>Automated CCPA, GDPR, and ISO compliance scanning.</p>
+        <a href="#" class="btn btn-outline-light">Buy Now</a>
+      </div>
+      <div class="col-md-4 product">
+        <img src="static/images/cyber.jpg" alt="Cyber Recovery">
+        <h4>Cyberattack Recovery Kit</h4>
+        <p>Diagnose breaches, patch holes, restore control — instantly.</p>
+        <a href="#" class="btn btn-outline-light">Buy Now</a>
+      </div>
+      <div class="col-md-4 product">
+        <img src="static/images/seo.jpg" alt="SEO Crash Fixer">
+        <h4>SEO Traffic Crash Fixer</h4>
+        <p>Diagnose and recover sudden drops in search engine traffic.</p>
+        <a href="#" class="btn btn-outline-light">Buy Now</a>
+      </div>
+      <div class="col-md-4 product">
+        <img src="static/images/smtp.jpg" alt="SMTP Fixer">
+        <h4>SMTP Deliverability Fixer</h4>
+        <p>Fix broken email delivery and domain reputation instantly.</p>
+        <a href="#" class="btn btn-outline-light">Buy Now</a>
+      </div>
+      <div class="col-md-4 product">
+        <img src="static/images/reputation.jpg" alt="Reputation Monitor">
+        <h4>Social Reputation Monitor</h4>
+        <p>Real-time alerts and protection from PR disasters online.</p>
+        <a href="#" class="btn btn-outline-light">Buy Now</a>
       </div>
     </div>
-  </nav>
-</header>
+  </main>
 
-<section class="text-center p-5 hero-section">
-  <h1 class="display-5 fw-bold">The Future of Corporate Rescues Starts Here</h1>
-  <p class="lead">Automated Solutions. Immediate Impact.</p>
-</section>
-
-<main class="container products-section">
-  <div id="portfolio" class="row">
-    <div class="col-md-4 product-card">
-      <img src="static/images/competitor.jpg" alt="Competitor Tracker">
-      <h4>Competitor Price Tracker</h4>
-      <p>Live tracking of rival pricing to outmaneuver instantly.</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="col-md-4 product-card">
-      <img src="static/images/compliance.jpg" alt="Compliance Checker">
-      <h4>Compliance Checker</h4>
-      <p>Automated CCPA, GDPR, and ISO compliance scanning.</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="col-md-4 product-card">
-      <img src="static/images/cyber.jpg" alt="Cyber Recovery">
-      <h4>Cyberattack Recovery Kit</h4>
-      <p>Diagnose breaches, patch holes, restore control — instantly.</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="col-md-4 product-card">
-      <img src="static/images/seo.jpg" alt="SEO Crash Fixer">
-      <h4>SEO Traffic Crash Fixer</h4>
-      <p>Diagnose and recover sudden drops in search engine traffic.</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="col-md-4 product-card">
-      <img src="static/images/smtp.jpg" alt="SMTP Fixer">
-      <h4>SMTP Deliverability Fixer</h4>
-      <p>Fix broken email delivery and domain reputation instantly.</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="col-md-4 product-card">
-      <img src="static/images/reputation.jpg" alt="Reputation Monitor">
-      <h4>Social Reputation Monitor</h4>
-      <p>Real-time alerts and protection from PR disasters online.</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </div>
-
-  <div id="about" class="text-center p-5">
-    <h2>About TrendForge_AI</h2>
-    <p>TrendForge_AI crafts precision-targeted, high-demand software solutions, offering instant corporate rescue operations powered by automation and AI.</p>
-  </div>
-
-  <div id="testimonials" class="text-center p-5">
-    <h2>Testimonials</h2>
-    <p><a href="https://www.cnn.com/2023/05/25/tech/cyberattack-cripples-major-corporation/index.html" target="_blank">[Case Study] Major Corporation Brought to a Halt by Cyberattack — Our Cyber Recovery Kit could have reversed it instantly.</a></p>
-    <p><a href="https://www.bbc.com/news/technology-65244712" target="_blank">[Case Study] Global Company SEO Disaster — Our SEO Traffic Crash Fixer would have prevented millions lost.</a></p>
-  </div>
-</main>
-
-<footer class="footer">
-  &copy; 2025 TrendForge_AI. Powered by Synapse Engine™.
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="text-center text-muted p-4">
+    &copy; 2025 TrendForge_AI. Powered by Synapse Engine™.
+  </footer>
 </body>
 </html>
